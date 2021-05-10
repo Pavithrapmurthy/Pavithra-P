@@ -1,0 +1,107 @@
+body {
+font-family: 'Raleway', sans-serif;
+font-weight: 400;
+color: #fff;
+letter-spacing: 1px;
+}
+
+.box {
+background-color: #fafafa;
+margin: 200px;
+box-shadow: 10px 15px 20px rgba(0, 0, 0, .1);
+display: grid;
+}
+
+.box-time {
+background-color: rgba(0, 4, 0, .95);
+padding: 50px;
+outline: 3px dashed #998100;
+outline-offset: -30px;
+text-align: center;
+animation-name: animate;
+animation-duration: 10s;
+animation-delay: 3s;
+animation-iteration-count: 5;
+animation-direction: reverse;
+}
+
+
+.heading {
+font-size: 35px;
+text-transform: uppercase;
+}
+
+.heading-days {
+color:#998100;
+font-size: 30px;
+}
+
+.heading-phone {
+font-size: 20px;
+}
+
+
+.box-form {
+padding: 20px 0;
+margin: 0 auto;
+color: #000;
+}
+
+
+
+form {
+display: grid;
+grid-row-gap: 20px;
+}
+form p {
+font-weight: 600;
+}
+.form-field {
+display: flex;
+justify-content: space-between;
+}
+
+input,select {
+padding: 10px 15px;
+}
+
+@keyframes animate {
+  0% {
+    tranform: rotate(145deg);
+    transform: scale(2, 3);
+  }
+
+  25% {
+    background: linear-gradient(145deg, yellow, #654566, green, black, red, white, yellow);
+  }
+
+  50% {
+    transform: rotate3d(125, 145, 165, 145deg);
+  }
+
+  75% {
+    transform: translate(160px, 250px);
+  }
+
+  100% {
+    transform: skew(170deg);
+  }
+}
+
+.btn {
+background-color: rgba(0, 0, 0, .95);
+color: #fff;
+padding: 10px 20px;
+border: none;
+font-size: 18px;
+border-radius: 100px;
+box-shadow: 7px 10px 12px rgba(0, 0, 0, .1);
+cursor: pointer;
+transition: all .3s;
+
+}
+
+.btn:hover {
+transform: scale(1.03);
+box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}

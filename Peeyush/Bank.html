@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank Form</title>
+</head>
+<body style="background-color:#87CEEB">
+  <h1 style="color:red">User Details</h1>
+    <form>
+        <center>
+            <table cellspacing="20">
+                <tr>
+                    <td><font color=red>*</font>Login ID</td>
+                    <td>
+                        <input type="text" name="id" required="" autofocus="" pattern="[a-zA-Z]{​​​​​​​2,50}​​​​​​​">
+                    </td>
+                </tr>
+                <tr>
+                    <td><font color=red>*</font>Password</td>
+                    <td>
+                        <input type="text" name="password" minilength="8" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><font color=red>*</font>Confirm Password</td>
+                    <td>
+                        <input type="text" name="password" minilength="8" required>
+                    </td>
+                </tr>
+    </table>
+    </center>
+    <h1 style="color:red">Personal Details</h1>
+    <form>
+        <table cellspacing="20">
+
+          <tr>
+            <td><font color=red>*</font>Salutation</td>
+              <td><select name="select">
+              <option value="1">select</option></select></td>
+            <td><font color=red>*</font>First Name</td>
+            <td>
+                <input type="text" name="fname" required="" autofocus="" pattern="[a-zA-Z]{​​​​​​​2,50}​​​​​​​">
+            </td>
+          </tr>
+
+          <tr>
+              <td>Middle Name</td>
+                <td>  <input type="text" name="mname" required="" autofocus="" pattern="[a-zA-Z]{​​​​​​​2,50}​​​​​​​">
+              </td>
+              <td><font color=red>*</font>Last Name</td>
+
+              <td>    <input type="text" name="lname" required="" autofocus="" pattern="[a-zA-Z]{​​​​​​​2,50}​​​​​​​">
+              </td>
+          </tr>
+
+          <tr>
+            <td><font color=red>*</font>Resident Status</td>
+              <td><select name="select">select
+              <option value="1">select</option></select></td>
+
+            <td><font color=red>*</font>Country</td>
+            <td>  <select name="select">
+              <option value="1">select</option></select></td>
+          </tr>
+
+          <tr>
+              <td><font color=red>*</font>Email-id</td>
+                  <td><input type="email" name="emailAddress" required>
+              </td>
+            <td><font color=red>*</font>Mobile Number</td>
+                <td><input type="tel" name="phone" pattern="[0-9]{​​​​​​​10,12}​​​​​​​">
+            </td>
+          </tr>
+
+      </table>
+
+      <table cellspacing="20">
+      <h1 style="color:red">Account Particulars</h1>
+      <tr>
+        <td><font color=red>*</font>15 Digit Account No</td>
+        <td>  <input type="number" name="number">
+        </td>
+          <td><font color=red>*</font>Nick Name</td>
+            <td>  <input type="text" name="nname" required="" autofocus="" pattern="[a-zA-Z]{​​​​​​​2,50}​​​​​​​">
+          </td>
+        </tr>
+        <tr>
+          <td><font color=red>*</font> Fund-transfer</td>
+            <td>  <select name="select">select
+              <option value="1">select</option></select></td>
+        </tr>
+  </table>
+
+<h2 style="color:red">Declartion</h2>
+<input type="checkbox" name="Declartion">I have read, understood and nearby to the terms and /conditions in respect of all product and channels/</input><br>
+<input type="checkbox" name="Declartion">I understand that any changes in the terms and conditions applicable to this relationship would be made......</input>
+<center>
+  <tr>
+      <td colspan="2" style="background-color:#87CEEB">
+          <button type="submit" style="background-color:#87CEEB">Submit</button>
+          <input type="reset" name="reset" value="Clear" style="background-color:#87CEEB">
+      </td>
+  </tr>
+  </center>
+</form>
+</body>
+</html>

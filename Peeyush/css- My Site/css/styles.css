@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  color: #668FBF;
+  font-size: 5.625rem;
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+}
+
+h2 {
+  color: #668FBF;
+  font-family: 'Montserrat', sans-serif;
+  margin: 50px auto 0 auto;
+  font-size: 2.5rem;
+  padding: 10px;
+}
+
+h3 {
+  color: #668FBF;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.top-container {
+  background-color: #E4F9F5;
+  position: relative;
+  padding-top: 100px;
+}
+
+.middle-container {
+  margin: 100px 0;
+  animation-name: animate;
+  animation-duration: 10s;
+  animation-delay: 3s;
+  animation-iteration-count: 5;
+  animation-direction:alternate-reverse;
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.intro {
+  width: 30%;
+  margin: auto;
+}
+
+p {
+  line-height: 2;
+}
+
+hr {
+  border: dotted black 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+.computer {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.camera {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+@keyframes animate {
+  0% {
+    tranform: rotate(145deg);
+    transform: scale(2, 3);
+  }
+
+  25% {
+    background: linear-gradient(145deg, yellow, #654566, green, black, red, white, yellow);
+  }
+
+  50% {
+    transform: rotate3d(125, 145, 165, 145deg);
+  }
+
+  75% {
+    transform: translate(160px, 250px);
+  }
+
+  100% {
+    transform: skew(170deg);
+  }
+}
